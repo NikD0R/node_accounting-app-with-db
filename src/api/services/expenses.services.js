@@ -1,6 +1,6 @@
 const { Op } = require('sequelize');
-const { Expense } = require('../../models/Expense.model');
-const { sequelize } = require('../../db');
+const { models, sequelize } = require('../../models/models');
+const { Expense } = models;
 
 const getAll = async (filters) => {
   const where = {};
