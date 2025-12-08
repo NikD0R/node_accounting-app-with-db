@@ -43,7 +43,7 @@ describe('User', () => {
       console.log(HOST);
     });
 
-    await sequelize.query('TRUNCATE TABLE expenses, users RESTART IDENTITY CASCADE;');
+    await sequelize.query('TRUNCATE TABLE expenses, users, categories RESTART IDENTITY CASCADE;');
   });
 
   afterEach(async () => {
